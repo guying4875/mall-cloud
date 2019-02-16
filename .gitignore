@@ -27,3 +27,6 @@
 */target/*
 .idea/*
 /mall-provide/mall-server/.mvn/
+/mall-disconfig/.mvn/
+/mall-eurake/.mvn/
+/mall-provide/mall-web/.mvn/
