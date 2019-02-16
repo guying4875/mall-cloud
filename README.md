@@ -1,18 +1,7 @@
-spring cloud 版本mall
+# spring cloud 版本mall
 
-mall-eurake  eureka服务端
-
-mall-server  业务服务端
-
-mall-web   前端
-http://localhost:9003
-
-mall-disconfig   配置中心
-    参考资料：
-        https://blog.csdn.net/yelllowcong/article/details/79593809
-
-
-
-
-参考资料
-https://blog.csdn.net/forezp/article/details/70148833/
+--mall-cloud <br/>----mall-disconfig : 配置中心 <br/>----mall-eurake ：
+服务注册发现中心 <br/>----mall-provide ： mall系统业务项目
+<br/>--------mall-server ： mall系统业务后端服务层项目
+<br/>--------mall-service-api ： mall系统业务后端服务API项目
+<br/>--------mall-web ： mall系统业务前端项目
