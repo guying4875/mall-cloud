@@ -1,0 +1,28 @@
+
+###########mall service 后端服务
+server:
+  port: 8011
+  servlet:
+    #应用访问名称
+    context-path: /mall-server
+
+
+  #eureka相关配置
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:9001/eureka/
+      server9002: http://127.0.0.1:9002/eureka/
+    enabled: true
+
+
+  #spring应用相关配置
+spring:
+  application:
+    #应用服务名称
+    name: mall-server
+
+
+

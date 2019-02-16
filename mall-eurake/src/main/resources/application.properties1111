@@ -1,0 +1,10 @@
+#设置服务端口
+server.port=9001
+
+spring.application.name=mall-eurake
+
+eureka.instance.hostname=127.0.0.1
+
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+#eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka/

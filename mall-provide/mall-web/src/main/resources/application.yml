@@ -1,0 +1,25 @@
+## mall-web 前端配置
+server:
+  port: 8080
+
+
+ #eureka相关配置
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:9001/eureka/
+      server9002: http://127.0.0.1:9002/eureka/
+    enabled: true
+
+
+  #spring应用相关配置
+spring:
+  application:
+    #应用服务名称
+    name: mall-web
+
+
+
+debug: true
