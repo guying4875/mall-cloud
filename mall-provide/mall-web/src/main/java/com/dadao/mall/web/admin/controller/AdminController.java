@@ -1,25 +1,25 @@
 package com.dadao.mall.web.admin.controller;
 
-import com.dadao.mall.web.admin.service.IAdminService;
+import com.dadao.mall.service.api.IAdminServiceAPI;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@EnableFeignClients(basePackages = "com.dadao.mall.service.api")
 public class AdminController {
 
     @Autowired
-    IAdminService adminService;
+    IAdminServiceAPI  adminServiceAPI;
 
 //    @Value("${jdbc.url:default value}")
 //    String jdbcurl ;
 
     @GetMapping("queryadmin")
-    public String queryAdmin(@RequestParam(value="id",defaultValue = "name is not null")String name){
-        String s = adminService.queryAdminById(name);
+    public String queryAdmin(@RequestParam(value="id",defaultValue = "name is not null")String id){
+        String s = adminServiceAPI.getAdmin(id);
         return s;
 
     }

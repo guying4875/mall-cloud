@@ -23,3 +23,13 @@ spring:
 
 
 debug: true
+feign:
+  hystrix:
+    enabled: false
+  httpclient:
+    enabled: true
+
+#调整日志级别
+logging:
+  level:
+    root: debug

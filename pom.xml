@@ -8,7 +8,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <!-- <relativePath/>  lookup parent from repository -->
     </parent>
     <groupId>com.dadao.mall</groupId>
     <artifactId>master</artifactId>
@@ -23,6 +23,8 @@
         <spring-cloud.version>Greenwich.RC2</spring-cloud.version>
         <mall.version>1.0.0-SNAPSHOT</mall.version>
         <lombok.version>1.18.4</lombok.version>
+        <springfox-swagger.version>2.9.2</springfox-swagger.version>
+        <spring-cloud-netflix.version>2.1.0.RC3</spring-cloud-netflix.version>
     </properties>
 
     <dependencies>
@@ -36,6 +38,25 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- spring cloud -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>${spring-cloud.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-dependencies</artifactId>
+            <version>${spring-cloud-netflix.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+
+
+
 
 
     </dependencies>
@@ -55,6 +76,19 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
+            </dependency>
+
+            <!-- 其他组件 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox-swagger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox-swagger.version}</version>
             </dependency>
 
 

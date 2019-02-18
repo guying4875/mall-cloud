@@ -17,11 +17,6 @@
 
     <dependencies>
 
-        <!-- mall服务端API -->
-        <dependency>
-            <groupId>com.dadao.mall</groupId>
-            <artifactId>mall-service-api</artifactId>
-        </dependency>
 
         <!-- spring boot 相关组件 -->
         <dependency>

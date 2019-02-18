@@ -2,9 +2,9 @@
 ###########mall service 后端服务
 server:
   port: 8010
-  servlet:
+  #servlet:
     #应用访问名称
-    context-path: /mall-server
+  #  context-path: /mall-server
 
 
   #eureka相关配置
@@ -26,3 +26,7 @@ spring:
 
 debug: true
 
+#开启日志级别
+logging:
+  level:
+    root: debug
