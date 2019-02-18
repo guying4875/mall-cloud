@@ -16,6 +16,8 @@ eureka:
       defaultZone: http://127.0.0.1:9001/eureka/
       server9002: http://127.0.0.1:9002/eureka/
     enabled: true
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.hostname}:${server.port}:@pom.version@
 
 
   #spring应用相关配置
@@ -24,7 +26,7 @@ spring:
     #应用服务名称--将会显示在eureka服务界面中
     name: @pom.artifactId@
 
-debug: true
+#debug: true
 
 #开启日志级别
 logging:
