@@ -9,14 +9,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.dadao.mall</groupId>
-    <artifactId>mall-server</artifactId>
+    <artifactId>mall-provider-user</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>mall-server</name>
-    <description>业务系统后端服务</description>
+    <description>用户信息服务中心</description>
 
 
     <dependencies>
 
+        <!-- mall服务端API -->
+        <dependency>
+            <groupId>com.dadao.mall</groupId>
+            <artifactId>mall-provider-user-api</artifactId>
+        </dependency>
 
         <!-- spring boot 相关组件 -->
         <dependency>

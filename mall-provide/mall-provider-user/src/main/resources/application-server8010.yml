@@ -1,7 +1,7 @@
 
 ###########mall service 后端服务
 server:
-  port: 8011
+  port: 8010
   #servlet:
     #应用访问名称
   #  context-path: /mall-server
@@ -21,8 +21,12 @@ eureka:
   #spring应用相关配置
 spring:
   application:
-    #应用服务名称
-    name: mall-server
+    #应用服务名称--将会显示在eureka服务界面中
+    name: @pom.artifactId@
 
+debug: true
 
-
+#开启日志级别
+logging:
+  level:
+    root: debug

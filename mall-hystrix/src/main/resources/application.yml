@@ -1,10 +1,10 @@
 
-###########mall service 后端服务
+###########mall hystrix 熔断设计
 server:
-  port: 8010
-  #servlet:
+  port: 9010
+  servlet:
     #应用访问名称
-  #  context-path: /mall-server
+    context-path: /mall-hystrix
 
 
   #eureka相关配置
@@ -22,11 +22,11 @@ eureka:
 spring:
   application:
     #应用服务名称
-    name: mall-server
+    name: mall-hystrix
+
 
 debug: true
+hystrix:
+  metrics:
+    enabled: true
 
-#开启日志级别
-logging:
-  level:
-    root: debug

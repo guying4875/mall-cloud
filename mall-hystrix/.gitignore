@@ -18,16 +18,8 @@
 
 ### NetBeans ###
 /nbproject/private/
-/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-
-*/target/*
-.idea/*
-/mall-provide/mall-server/.mvn/
-/mall-disconfig/.mvn/
-/mall-eurake/.mvn/
-/mall-provide/mall-web/.mvn/
-/mall-provide/mall-provider-user/.mvn/
+/build/

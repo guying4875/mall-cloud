@@ -95,13 +95,13 @@
             <!-- mall服务端API -->
             <dependency>
                 <groupId>com.dadao.mall</groupId>
-                <artifactId>mall-service-api</artifactId>
+                <artifactId>mall-provider-user</artifactId>
                 <version>${mall.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>com.dadao.mall</groupId>
-                <artifactId>mall-server</artifactId>
+                <artifactId>mall-provider-user-api</artifactId>
                 <version>${mall.version}</version>
             </dependency>
 

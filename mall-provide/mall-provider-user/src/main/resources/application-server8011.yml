@@ -1,9 +1,13 @@
-## mall-web 前端配置
+
+###########mall service 后端服务
 server:
-  port: 8080
+  port: 8011
+  #servlet:
+    #应用访问名称
+  #  context-path: /mall-server
 
 
- #eureka相关配置
+  #eureka相关配置
 eureka:
   client:
     fetch-registry: true
@@ -22,14 +26,3 @@ spring:
 
 
 
-debug: true
-feign:
-  hystrix:
-    enabled: false
-  httpclient:
-    enabled: true
-
-#调整日志级别
-logging:
-  level:
-    root: debug
