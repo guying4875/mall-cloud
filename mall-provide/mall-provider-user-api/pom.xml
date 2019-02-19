@@ -16,6 +16,8 @@
 
     <dependencies>
 
+        
+
 
         <dependency>
             <groupId>junit</groupId>
@@ -24,16 +26,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- 其他组件 -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-        </dependency>
 
 
         <!-- 引入feign依赖 -->

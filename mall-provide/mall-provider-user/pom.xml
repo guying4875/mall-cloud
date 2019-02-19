@@ -27,6 +27,12 @@
             <artifactId>mall-provider-user-api</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.dadao.mall</groupId>
+            <artifactId>mall-common-core</artifactId>
+        </dependency>
+
+
         <!-- spring boot 相关组件 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
