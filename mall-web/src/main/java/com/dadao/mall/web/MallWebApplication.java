@@ -3,8 +3,6 @@ package com.dadao.mall.web;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  *  Feign是一个声明式的Web Service客户端，使用Feign来创建一个接口并用@FeignClient注解来配置它既可。
@@ -17,7 +15,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 //主要注册成为Eureka的一个客户端
 @EnableDiscoveryClient
 //开启feign
-@EnableFeignClients
 public class MallWebApplication {
 
     public static void main(String[] args) {

@@ -1,0 +1,4 @@
+common:
+  swagger2-properties:
+    title: 用户信息接口
+    description: 用户信息维护所需要的各类接口

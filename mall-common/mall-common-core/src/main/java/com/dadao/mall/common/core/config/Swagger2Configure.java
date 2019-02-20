@@ -13,12 +13,13 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@Configuration
+import javax.annotation.Resource;
+
 @EnableSwagger2
 public class Swagger2Configure {
 
-    @Autowired
-    CommonPropertiesManager commonPropertiesManager;
+    @Resource
+    private CommonPropertiesManager commonPropertiesManager;
 
     /**
      * 创建swagger2 API文档的docket
