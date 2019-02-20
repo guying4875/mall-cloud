@@ -1,4 +1,4 @@
-package com.dadao.mall;
+package com.dadao.mall.admin.config;
 
 import feign.Logger;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,6 @@
 package com.dadao.mall.web.admin.controller;
 
-import com.dadao.mall.service.api.AdminFeignAPI;
+import com.dadao.mall.admin.service.api.AdminFeignAPI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

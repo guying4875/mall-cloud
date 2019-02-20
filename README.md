@@ -26,9 +26,17 @@ mall系统业务后端服务API项目，其中包含基于feign的RPC远程调�
 &emsp;&emsp;[史上最简单的 SpringCloud 教程 | 第一篇： 服务的注册与发现Eureka(Finchley版本)](https://blog.csdn.net/forezp/article/details/81040925)
 :利用 idea构建基本的Eureka中心的服务端、客户端<br/>
 
->>#### [2] *Feign相关知识* <br/>
-&emsp;&emsp;[ Spring Cloud 之 Feign 调用实例及异常分析](https://www.jianshu.com/p/2745cc19a6da)
-<br/> &emsp;
+>>#### [2] *Feign相关知识* 
+<br/>&emsp;&emsp;
+[Spring Cloud 之 Feign 调用实例及异常分析](https://www.jianshu.com/p/2745cc19a6da)
+<br/>&emsp;&emsp;&emsp;
+[史上最简单的SpringCloud教程 | 第三篇: 服务消费者（Feign）(Finchley版本)](https://blog.csdn.net/forezp/article/details/81040965)
+<br/>&emsp;&emsp;
+[深入理解Feign之源码解析](https://blog.csdn.net/forezp/article/details/73480304)
+\:分析Feign源码的运行流程
+
+>>#### [3] *Hystrix相关知识* <br/>
+&emsp;
 &emsp;[史上最简单的SpringCloud教程 | 第四篇:断路器（Hystrix）(Finchley版本)](https://blog.csdn.net/forezp/article/details/81040990):讲解采用ribbon,feign等组件集成hystrix的方式
 
 
