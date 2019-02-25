@@ -53,6 +53,8 @@ mall系统业务后端服务API项目，其中包含基于feign的RPC远程调�
  &emsp;&emsp;[@ConfigurationProperties 注解使用方法+源码分析](https://blog.csdn.net/u011649691/article/details/79491674)<br/>
  &emsp;&emsp;[Spring Boot中使用 @ConfigurationProperties 注解](https://www.cnblogs.com/suneryong/p/7221131.html)
 
+&emsp;&emsp;[swagger2注解使用教程](https://www.jianshu.com/p/f30e0c646c63)：介绍swagger2中基本的注解使用方式以及含义
+<br/>
 &emsp;&emsp;[Spring Boot中使用Swagger2构建强大的RESTful API文档](https://www.cnblogs.com/xiaohanghang/p/6018654.html)
 <br/>
 &emsp;&emsp;[SpringBoot资源文件的存放位置设置](https://blog.csdn.net/justry_deng/article/details/81406752)

@@ -1,4 +1,4 @@
-package com.dadao.mall.provider.user;
+package com.dadao.mall.provider.admin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

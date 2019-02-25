@@ -39,6 +39,12 @@
         </dependency>
         <!-- swagger2组件 自动生产API -->
 
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
 

@@ -1,4 +1,4 @@
-package com.dadao.mall.provider.user;
+package com.dadao.mall.provider.admin;
 
 import com.dadao.mall.common.core.config.Swagger2Configure;
 import org.springframework.boot.SpringApplication;

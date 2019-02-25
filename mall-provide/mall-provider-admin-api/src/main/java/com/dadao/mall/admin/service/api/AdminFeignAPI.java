@@ -1,9 +1,11 @@
 package com.dadao.mall.admin.service.api;
 
 import com.dadao.mall.admin.config.FeignConfig;
+import com.dadao.mall.admin.model.Admin;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,8 +27,8 @@ public interface AdminFeignAPI {
      * @param id
      * @return
      */
-    @ApiOperation(httpMethod = "POST", value = "根据ID获取admin信息")
+    @ApiOperation(httpMethod = "POST", value = "根据ID获取admin信息",notes = "根据请求地址中ID获取admin对象信息")
     @ApiImplicitParam(name = "id",value="用户id",dataType = "String",required = true)
     @RequestMapping(value = "/api/admin/{id}",method = RequestMethod.POST)
-    String getAdmin(@PathVariable("id") String id);
+    Admin getAdmin(@PathVariable("id") String id);
 }

@@ -1,5 +1,6 @@
-package com.dadao.mall.provider.user.service;
+package com.dadao.mall.provider.admin.service;
 
+import com.dadao.mall.admin.model.Admin;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,5 +13,5 @@ public interface AdminService  {
      * @param adminId
      * @return
      */
-    String getAdmin(String adminId);
+    Admin getAdmin(String adminId);
 }
