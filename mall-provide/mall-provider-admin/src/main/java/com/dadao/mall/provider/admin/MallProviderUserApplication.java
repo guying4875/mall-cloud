@@ -12,10 +12,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableEurekaClient
 //指定spring扫描路径
 @ComponentScan(basePackages = "com.dadao.mall.**")
-//引入通用配置类
-@Import(Swagger2Configure.class)
 //开启swagger2 自动构建API文档功能
 @EnableSwagger2
+//引入通用配置类
+@Import(Swagger2Configure.class)
 public class MallProviderUserApplication {
 
     public static void main(String[] args) {

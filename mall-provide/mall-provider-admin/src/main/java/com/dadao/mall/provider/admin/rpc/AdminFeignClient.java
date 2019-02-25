@@ -1,7 +1,8 @@
 package com.dadao.mall.provider.admin.rpc;
 
-import com.dadao.mall.provider.admin.service.AdminService;
+import com.dadao.mall.admin.model.Admin;
 import com.dadao.mall.admin.service.api.AdminFeignAPI;
+import com.dadao.mall.provider.admin.service.AdminService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -18,8 +19,8 @@ public class AdminFeignClient implements AdminFeignAPI {
     AdminService adminService;
 
     @Override
-    public String getAdmin(String id) {
+    public Admin getAdmin(String id) {
         log.debug("查询用户"+id);
-        return adminService.getAdmin(id)+"  "+System.currentTimeMillis();
+        return adminService.getAdmin(id);
     }
 }
