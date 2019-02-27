@@ -4,15 +4,15 @@ cloud全家桶进行微服务化部署的项目，搭建方式借鉴了[paasclou
 
 # spring cloud 版本mall
 
---mall-cloud <br/>----mall-disconfig : 配置中心
-（访问地址：127.0.0.1:9001;127.0.0.1:9002） <br/>----mall-eurake ：
-服务注册发现中心 <br/>----mall-common <br/>--------mall-common-core
-:mall项目通用配置项（swagger2配置内容,） <br/>----mall-provide ：
-mall系统业务项目 <br/> --------mall-provider-user-api ：
-mall系统业务后端服务API项目，其中包含基于feign的RPC远程调用配置、熔断机制配置;基于swagger2的API文档自动生成配置
-<br/> --------mall-provider-user ： mall-service-api 实现
-(访问地址：127.0.0.1:8010/api/XXXXX;127.0.0.1:8011/api/XXXXX) <br/>
-<br/>--------mall-web ： mall系统业务前端项目
+--mall-cloud <br/>----mall-disconfig : **配置中心
+（访问地址：127.0.0.1:9001;127.0.0.1:9002）** <br/>----mall-eurake ：
+**服务注册发现中心** <br/>----mall-common <br/>--------mall-common-core
+:**mall项目通用配置项（swagger2配置内容,）** <br/>----mall-provide ：
+**mall系统业务项目** <br/> --------mall-provider-admin-api ：
+**mall系统业务后端服务API项目，其中包含基于feign的RPC远程调用配置、熔断机制配置;基于swagger2的API文档自动生成配置**
+<br/> --------mall-provider-admin ： mall-provider-admin-api **实现
+(访问地址：127.0.0.1:8010/swagger-ui.html#/查看接口文档)** <br/>
+<br/>--------mall-web ： **mall系统业务前端项目**
 
 
 
@@ -26,14 +26,25 @@ mall系统业务后端服务API项目，其中包含基于feign的RPC远程调�
 &emsp;&emsp;[史上最简单的 SpringCloud 教程 | 第一篇： 服务的注册与发现Eureka(Finchley版本)](https://blog.csdn.net/forezp/article/details/81040925)
 :利用 idea构建基本的Eureka中心的服务端、客户端<br/>
 
+&emsp;&emsp;[@EnableDiscoveryClient与@EnableEurekaClient区别](https://www.jianshu.com/p/f6db3117864f)</br>
+
+
+
+
 >>#### [2] *Feign相关知识* 
 <br/>&emsp;&emsp;
 [Spring Cloud 之 Feign 调用实例及异常分析](https://www.jianshu.com/p/2745cc19a6da)
 <br/>&emsp;&emsp;&emsp;
-[史上最简单的SpringCloud教程 | 第三篇: 服务消费者（Feign）(Finchley版本)](https://blog.csdn.net/forezp/article/details/81040965)
+<br/>&emsp;&emsp;[Spring Cloud Feign 服务消费、负载均衡、熔断](https://blog.csdn.net/xslde_com/article/details/81153498)<br/>
+&emsp;&emsp;[史上最简单的SpringCloud教程 | 第三篇: 服务消费者（Feign）(Finchley版本)](https://blog.csdn.net/forezp/article/details/81040965)
 <br/>&emsp;&emsp;
 [深入理解Feign之源码解析](https://blog.csdn.net/forezp/article/details/73480304)
-\:分析Feign源码的运行流程
+\:分析Feign源码的运行流程<br/>
+
+
+
+
+
 
 >>#### [3] *Hystrix相关知识* <br/>
 &emsp;
