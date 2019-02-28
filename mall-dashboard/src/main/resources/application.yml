@@ -1,0 +1,21 @@
+## mall-dashboard hystrix监控仪表盘
+server:
+  port: 9010
+
+
+#eureka相关配置
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://127.0.0.1:9001/eureka/
+      server9002: http://127.0.0.1:9002/eureka/
+    enabled: true
+
+
+#spring应用相关配置
+spring:
+  application:
+        #应用服务名称--将会显示在eureka服务界面中
+    name: @pom.artifactId@
